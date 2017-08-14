@@ -51,4 +51,5 @@ FROM (
 ) AS s3
 -- WHERE NOT is_na
 --   AND tblpages*((pst).free_percent + (pst).dead_tuple_percent)::float4/100 >= 1
+ORDER BY extra_size DESC, extra_ratio DESC
 ;
